@@ -3,13 +3,12 @@ package br.com.fiap.beans;
 public class Estado {
 	private short codigo;
 	private String nome;
-	private char sigla;
+	private String sigla;
 	
 	public Estado() { }
 	
-	public Estado(short codigo, String nome, char sigla) {
+	public Estado(String nome, String sigla) {
 		super();
-		setCodigo(codigo);
 		setNome(nome);
 		setSigla(sigla);
 	}
@@ -26,10 +25,10 @@ public class Estado {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public char getSigla() {
+	public String getSigla() {
 		return sigla;
 	}
-	public void setSigla(char sigla) {
+	public void setSigla(String sigla) {
 		this.sigla = sigla;
 	}
 }
